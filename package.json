@@ -1,0 +1,26 @@
+{
+  "name": "node-api--padrao-restful",
+  "version": "1.0.0",
+  "description": "API do zero com Node.js, Express e MongoDB com Mongoose, utilizando boas práticas e padrão RESTful",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./index.js localhost 3000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IsabelSleigman/node-api--padrao-restful.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IsabelSleigman/node-api--padrao-restful/issues"
+  },
+  "homepage": "https://github.com/IsabelSleigman/node-api--padrao-restful#readme",
+  "dependencies": {
+    "express": "^4.17.2",
+    "mongoose": "^6.1.8",
+    "nodemon": "^2.0.15"
+  }
+}
