@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/IsabelSleigman/node-api--padrao-restful#readme",
   "dependencies": {
+    "dotenv": "^14.3.0",
     "express": "^4.17.2",
     "mongoose": "^6.1.8",
     "nodemon": "^2.0.15"

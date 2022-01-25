@@ -1,4 +1,5 @@
 //config inicial
+require('dotenv').config()
 const express = require('express')
 const mongoose = require('mongoose')
 const app = express();
@@ -24,8 +25,8 @@ app.get('/', (req, res) =>{
 });
 
 // entregar uma porta
-const DB_USER = 'Sleigman'
-const DB_PASSWORD = encodeURIComponent('12345')
+const DB_USER = process.env.DB_USER
+const DB_PASSWORD = encodeURIComponent(process.env.DB_PASSWORD)
 
 mongoose.connect(`mongodb+srv://${DB_USER}:${DB_PASSWORD}@apicluster.ambvo.mongodb.net/bandofaapi?retryWrites=true&w=majority`)
 .then(() => {
